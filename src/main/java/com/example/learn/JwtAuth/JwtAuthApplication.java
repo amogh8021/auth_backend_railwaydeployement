@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.example.learn.JwtAuth")
 @EntityScan(basePackages = "com.example.learn.JwtAuth")
 @EnableJpaRepositories(basePackages = "com.example.learn.JwtAuth")
 public class JwtAuthApplication {
@@ -14,3 +14,4 @@ public class JwtAuthApplication {
         SpringApplication.run(JwtAuthApplication.class, args);
     }
 }
+
