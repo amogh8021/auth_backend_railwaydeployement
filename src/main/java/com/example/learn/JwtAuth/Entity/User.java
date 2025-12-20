@@ -1,4 +1,5 @@
-package com.example.learn.JwtAuth.Entity;
+package com.example.learn.JwtAuth.entity;
+
 
 
 import jakarta.persistence.*;
